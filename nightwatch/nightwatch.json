@@ -1,0 +1,39 @@
+{
+    "test_workers": {
+        "enabled": false,
+        "workers": 4
+    },
+    "src_folders": [
+        "./tests"
+    ],
+    "output_folder": "./reports",
+    "globals_path": "./globals.js",
+    "globals": "",
+    "live_output": true,
+    "selenium": {
+        "start_process": false
+    },
+    "test_settings": {
+      "default": {
+        "selenium_port": 9515,
+        "selenium_host": "localhost",
+        "skip_testcases_on_fail": false,
+        "default_path_prefix": "",
+        "end_session_on_fail": true,
+        "desiredCapabilities": {
+          "browserName": "chrome",
+          "acceptSslCerts": true,
+          "chromeOptions": {
+            "args": [
+              "--no-sandbox",
+              "--disable-gpu",
+	      "window-size=1920x1080"
+            ],
+            "binary": "/usr/bin/google-chrome"
+          }
+        }
+      }
+    }
+}
+
+

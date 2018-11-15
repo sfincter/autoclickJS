@@ -1,6 +1,5 @@
 var fs = require('fs')
 
-
 module.exports = {
 
     'Demo test' : function (browser) {
